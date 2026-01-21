@@ -1,11 +1,17 @@
+'use client'
 import Image from 'next/image'
 import React from 'react'
+import { BsArrowRight } from 'react-icons/bs'
+import Typewriter from 'typewriter-effect'
+import ParticlesHero from './ParticlesHero'
 
 const Hero = () => {
   return (
     <div className='relative h-screen flex items-center justify-center text-white overflow-hidden flex-col'>
+      <ParticlesHero />
         <div className='relative z-10 flex flex-col items-center'>
-        <Image src ="https://media.licdn.com/dms/image/v2/D5603AQG-hVnKnBqDrA/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1700220179242?e=1770249600&v=beta&t=9VwrVA8yEMc-EecnclfZBVaXx3nxavUDHe0he9kRoyA" 
+          
+        <Image src = {process.env.PROFILE_PHOTO_URL!} 
         alt ="heroimage"
         width = {150}
         height = {150}
@@ -14,9 +20,28 @@ const Hero = () => {
             Creating App & Web products, <br/> Brands,
             <span className="text-cyan-200"> and Experiences </span>
         </h1>
-        <h2 className='mt-5 text-sm px-2 text-center sm:text-2xl md:text-3xl lg:text-4xl font-medium flex items-center '>
-            Hi !, I'm Chitravansh - A passionate   //@57:17
+        <h2 className='mt-5 text-sm px-2 text-center sm:text-2xl md:text-3xl lg:text-4xl font-medium flex items-center gap-2 '>
+            Hi !, I'm Chitravansh - A passionate 
+            <span className='text-cyan-200 font-bold'>
+              <Typewriter options ={{
+                strings :[
+                  ' Web Developer',
+                  ' AI/ML Solutions Developer',
+                  ' App Developer'
+                ],
+                autoStart:true,
+                loop :true,
+                delay : 75,
+                deleteSpeed : 50,
+                // wrapperClassName : "pl-2"
+              }} />
+            </span>
         </h2>
+        <button className='mt-6 px-10 py-4 bg-blue-800 hover:bg-blue-900 transition-all duration-300 
+        cursor-pointer rounded-full text-lg font-medium ' >
+        <span >See My Work</span>
+        <BsArrowRight className='w-5 h-5 ml-2 inline-block' />
+        </button>
         </div>
 
     </div>
