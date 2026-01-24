@@ -20,22 +20,24 @@ const Hero = () => {
             Creating App & Web products, <br/> Brands,
             <span className="text-cyan-200"> and Experiences </span>
         </h1>
-        <h2 className='mt-5 text-sm px-2 text-center sm:text-2xl md:text-3xl lg:text-4xl font-medium flex items-center gap-2 '>
-            Hi !, I'm Chitravansh - A passionate 
+        <h2 className='mt-5 text-sm px-2 text-center sm:text-2xl md:text-3xl lg:text-4xl font-medium flex items-center gap-2'> {/**gap-2 */}
+           
+            <span className="whitespace-nowrap"> Hi !, I'm Chitravansh - A passionate </span>
             <span className='text-cyan-200 font-bold'>
               <Typewriter options ={{
                 strings :[
                   ' Web Developer',
-                  ' AI/ML Solutions Developer',
+                  ' AI/ML Developer',
                   ' App Developer'
                 ],
                 autoStart:true,
                 loop :true,
                 delay : 75,
                 deleteSpeed : 50,
-                // wrapperClassName : "pl-2"
+                wrapperClassName : "pl-2"
               }} />
             </span>
+            
         </h2>
         <button className='mt-6 px-10 py-4 bg-blue-800 hover:bg-blue-900 transition-all duration-300 
         cursor-pointer rounded-full text-lg font-medium ' >
