@@ -4,17 +4,20 @@ import Services from './Services/Services'
 import Resume from './Resume/Resume'
 import Projects from './Projects/Projects'
 import Skills from './Skills/Skills'
-// import ClientReview from './ClientReview/ClientReview'
+import ClientReview from './ClientReview/ClientReview'
+import Blog from './Blog/Blog'
 
 const Home = () => {
   return (
-    <div className="relative min-h-screen flex items-center justify-center text-white overflow-hidden flex-col">
+    // <div className="relative min-h-screen flex items-center justify-center text-white overflow-hidden flex-col">
+    <div className =  " relative flex flex-col text-white">
      <Hero />
      <Services />
      <Resume />
      <Projects />
      <Skills />
-     {/* <ClientReview /> */}
+     <ClientReview />
+     <Blog />
     </div>
   )
 }
