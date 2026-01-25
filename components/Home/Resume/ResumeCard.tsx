@@ -26,9 +26,8 @@ const ResumeCard = ({ Icon, role, date, description }: Props) => {
             {role}
           </h1>
           <p className="text-gray-300 text-sm sm:text-base pt-3">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus eum nesciunt non officiis beatae. Dolorum commodi nisi enim officiis omnis delectus, 
-            similique consequatur magnam impedit officia dolor id, fugiat eos!
-            {description}
+          
+            {description || "No description Provided"}
 
           </p>
         </div>

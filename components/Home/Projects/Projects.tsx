@@ -12,7 +12,9 @@ const Projects = () => {
         {/* grid grid-cols-1 md:grid-cols-2 (for making it in grid layout*/}
 
         {/**1st Project */}
-        <div
+        <a href="https://medi-translate-coral.vercel.app/"
+          target="_blank"
+          rel="noopener noreferrer"
           data-aos="fade-up"
           data-aos-anchor-placement="top-center"
           data-aos-delay="0">
@@ -28,11 +30,13 @@ const Projects = () => {
           <h1 className='pt-2 font-medium text-white/80'>
             NextJs , AI
           </h1>
-        </div>
+        </a>
 
         {/**2nd Project */}
 
-        <div
+        <a href="https://trainers-portal.vercel.app/"
+          target="_blank"
+          rel="noopener noreferrer"
           data-aos="zoom-out"
           data-aos-anchor-placement="top-center"
           data-aos-delay="100">
@@ -48,14 +52,17 @@ const Projects = () => {
           <h1 className='pt-2 font-medium text-white/80'>
             NextJs, Node
           </h1>
-        </div>
+        </a>
 
         {/**3rd Project */}
-        <div
+        <a href="https://newswebsite-cyan.vercel.app/"
+          target="_blank"
+          rel="noopener noreferrer"
           data-aos="zoom-out"
           data-aos-anchor-placement="top-center"
           data-aos-delay="200">
           {/* <Image src= "" ></Image> */}
+
           <Image src="/images/project3.png"
             alt='img'
             width={800}
@@ -67,7 +74,7 @@ const Projects = () => {
           <h1 className='pt-2 font-medium text-white/80'>
             NextJs , Node , Open API
           </h1>
-        </div>
+        </a>
 
       </div>
 
