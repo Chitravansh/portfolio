@@ -122,7 +122,7 @@ The **Blog section** is fully dynamic and powered by the **Dev.to public API**.
 ### Example API
 
 ```
-https://dev.to/api/articles?username=itsugo&per_page=3
+https://dev.to/api/articles?username=${process.env.DEV_TO_USERNAME}$&per_page=3
 ```
 
 ---
