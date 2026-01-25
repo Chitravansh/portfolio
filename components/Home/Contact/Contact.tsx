@@ -61,7 +61,7 @@ const Contact = () => {
         <div
           data-aos="zoom-in"
           data-aos-anchor-placement="top-center"
-          data-aos-delay="100"
+          data-aos-delay="10"
           className=" md:p-10 px-4 py-3.5 bg-[#131332] rounded-lg ">
           <input
             type="text"
