@@ -1,7 +1,7 @@
-import { FaBrain } from "react-icons/fa"; 
-import { BiBrain } from "react-icons/bi"; 
-import { FaSchool } from "react-icons/fa"; 
-import { IoSchoolOutline } from "react-icons/io5"; 
+import { FaBrain } from "react-icons/fa";
+import { BiBrain } from "react-icons/bi";
+import { FaSchool } from "react-icons/fa";
+import { IoSchoolOutline } from "react-icons/io5";
 import React from 'react'
 import ResumeCard from './ResumeCard'
 import { FaCodepen, FaReact } from 'react-icons/fa'
@@ -18,12 +18,14 @@ const Resume = () => {
           <h1 className='text-3xl sm:text-4xl font-bold text-white'>
             My Work <span className='text-cyan-200'> Experience</span>
           </h1>
-          <div className='mt-10'>
+          <div className='mt-10'
+            data-aos="zoom-in"
+            data-aos-anchor-placement="top-center">
             <ResumeCard Icon={FaCodepen} role="Full-Stack Developer" />
             <ResumeCard Icon={FaReact} role="Front-End Developer" />
             <ResumeCard Icon={BsDatabase} role="Backend Developer" />
-             <ResumeCard Icon={BiBrain} role="AI/ML Developer" />
-           
+            <ResumeCard Icon={BiBrain} role="AI/ML Developer" />
+
 
           </div>
         </div>
@@ -33,11 +35,16 @@ const Resume = () => {
             My <span className='text-cyan-200'> Education</span>
           </h1>
 
-          <div className='mt-10'>
-            <ResumeCard Icon={IoSchoolOutline} role="Dr. A.P.J Abdul Kalam Technical University" date ="Nov 2022 - June 2026"/>
-            <ResumeCard Icon={FaSchool} role="Senior Secondary School" date ="2020 - 2021"  />
-            <ResumeCard Icon={FaSchool} role="High School " date = "2018 - 2019" />
-           
+          <div
+            className='mt-10'
+            data-aos="zoom-out"
+            data-aos-anchor-placement="top-center"
+            data-aos-delay="300"
+          >
+            <ResumeCard Icon={IoSchoolOutline} role="Dr. A.P.J Abdul Kalam Technical University" date="Nov 2022 - June 2026" />
+            <ResumeCard Icon={FaSchool} role="Senior Secondary School" date="2020 - 2021" />
+            <ResumeCard Icon={FaSchool} role="High School " date="2018 - 2019" />
+
 
           </div>
 
